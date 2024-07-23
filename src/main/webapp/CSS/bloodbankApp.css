@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./../images/desktopHomeWallpaper.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2em;
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 30%;
+    max-width: 180px;
+    min-width: 120px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	body{
+		background-image: url("./../images/tabletHomeWallpaper.jpg");
+	}
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .button-container {
+        gap: 10px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+	body{
+		background-image: url("./../images/mobileHomeWallpaper.jpg");
+	}
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .button-container {
+        gap: 3px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
